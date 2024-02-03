@@ -1,6 +1,7 @@
 const holeGame = document.querySelector(".hole-game");
 let holeWithGoblin = holeGame.querySelector(".hole_has-goblin");
 
+// получаем новое случайное число, отличное от предыдущего
 function getRndNum(previous) {    
   const rnd = Math.floor(Math.random() * 16) + 1;
   if (previous == rnd) {      
